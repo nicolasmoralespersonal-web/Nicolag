@@ -3,15 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Página Pessoal</title>
+  <title>Mensaje para Panda</title>
 
   <style>
     :root {
       --bg: #ffffff;
       --text: #1a1a1a;
       --muted: #666;
-      --accent: #000000;
+      --accent: #2563eb;
     }
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
     * {
       margin: 0;
@@ -86,22 +97,34 @@
       h1 {
         font-size: 2rem;
       }
-    }
+    
   </style>
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 </head>
 
 <body>
-  <main class="container">
+  <main class="container fade-in">
     
     <header>
       <h1>Nicolas Morales</h1>
-      <div class="subtitle">Página pessoal</div>
+      <div class="subtitle">Mensaje para Panda</div>
     </header>
 
     <section>
       <h2>Asunto</h2>
       <p>
-        Te amo panda, serias mi companera en la busqueda de mi One Piece?.
+        Te amo panda, serias mi compañera en la busqueda de mi One Piece?
       </p>
     </section>
 
